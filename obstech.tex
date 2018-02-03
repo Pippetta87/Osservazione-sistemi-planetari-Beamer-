@@ -1,6 +1,6 @@
 \section{Metodi diretti.}
 
-\begin{frame}{Osservazione diretta}
+\begin{frame}{Osservazione diretta: tecniche astrometriche}
 Risoluzione del sistema in maniera visuale: la separazione angolare Sole/Giove sarebbe \SI{1}{\arcsec} gi\'a a \SI{5}{\parsec}.
 
 Estrema differenza tra $L^*$ e $L_P$: per il sistema Sole/Giove nel visibile
@@ -11,11 +11,21 @@ Estrema differenza tra $L^*$ e $L_P$: per il sistema Sole/Giove nel visibile
 Effetto di selezione: pianeti lontani dalla stella ($a>\SI{10}{\astronomicalunit}$).
 \end{frame}
 
-\begin{wordonframe}{separazione angolare}
-
+\begin{wordonframe}{Orbita stellare}
+Misura posizione e moti dei corpi celesti. The path of a star orbiting star-planet barycentre appears projected on the plane of the sky as an ellipse with angular semi-major axis $\alpha$
+\begin{align*}
+&a_*:a_{rel}=M_p:(M_p+M_*),\ a_{rel}=a_*+a_p
+&\alpha=\frac{M_p}{M_*+M_p}a\approx\frac{M_p}{M_*}a\\
+&\approx(\frac{M_p}{M_*})(\frac{a}{\SI{1}{\astronomicalunit}})(\frac{d}{\SI{1}{\parsec}})\expy{-1}\si{\arcsec}
+\end{align*}
+Angolo sotteso da semiasse maggiore orbita ellittica stellare attorno a cm:
+\begin{equation*}
+\theta=\frac{m_p}{r}(\frac{P}{M_*})\expy{3/2}
+\end{equation*}
+P(\si{\year}), masse in masse solari e r(\si{\parsec}).
 \end{wordonframe}
 
-\section{Metodi per la scoperta di sistemi planetari extrasolari.}
+\section{Metodi indiretti.}
 
 \subsection{Timing}
 
@@ -119,22 +129,6 @@ Inserendo quantit\'a tipiche per ricerca di esopianeti
 \includegraphics[width=(0.7\textwidth),height=\textheight,keepaspectratio]{mp-a-micro}
 \caption{Massa pianeti vs semiasse per pianeti scoperti tramite microlensing.}
 \end{figure}
-\end{frame}
-
-\subsection{Tecniche astrometriche}
-
-\begin{frame}{Orbita stellare}
-Misura posizione e moti dei corpi celesti. The path of a star orbiting star-planet barycentre appears projected on the plane of the sky as an ellipse with angular semi-major axis $\alpha$
-\begin{align*}
-&a_*:a_{rel}=M_p:(M_p+M_*),\ a_{rel}=a_*+a_p
-&\alpha=\frac{M_p}{M_*+M_p}a\approx\frac{M_p}{M_*}a\\
-&\approx(\frac{M_p}{M_*})(\frac{a}{\SI{1}{\astronomicalunit}})(\frac{d}{\SI{1}{\parsec}})\expy{-1}\si{\arcsec}
-\end{align*}
-Angolo sotteso da semiasse maggiore orbita ellittica stellare attorno a cm:
-\begin{equation*}
-\theta=\frac{m_p}{r}(\frac{P}{M_*})\expy{3/2}
-\end{equation*}
-P(\si{\year}), masse in masse solari e r(\si{\parsec}).
 \end{frame}
 
 \subsection{Tecniche spettroscopiche (Misura velocit\'a radiale).}
