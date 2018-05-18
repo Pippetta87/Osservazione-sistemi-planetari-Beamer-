@@ -62,31 +62,29 @@ Angolo sotteso da semiasse maggiore orbita ellittica stellare attorno a cm:
 P(\si{\year}), masse in masse solari e r(\si{\parsec}).
 \end{wordonframe}
 
-\subsection{Moto attorno al centro di massa}
+\subsection{Orbita del pianeta}
 
+\begin{frame}{Moto del pianeta}
 Il moto di un singolo pianeta attorno ad una stella provoca un moto riflesso della stella attorno al centro di massa. Questo provoca perturbazione delle caratteristiche osservabili
 \begin{itemize}
     \item Radial velocity
     \item angular (astrometric) position in the sky
     \item arrival time of periodic reference signal 
 \end{itemize}
-
 Il pianeta e la stella orbitano attorno al comune CM in orbite ellittiche chiuse con il CM come uno dei 2 fuochi.
-
 \begin{align*}
 &r=\frac{a(1-e^2)}{1+e\cos{\nu}}\\
 &\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\\
 &b^2=a^2(1-e^2)
 \end{align*}
-
-\subsection{Anomali vera, eccentrica e media.}
-
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=(0.9\textwidth),height=\textheight,keepaspectratio]{vrcurve}
 \caption{Stellar radial velocity curves: dependency on $e$ and $\omega$.}
 \end{figure}
+\end{frame}
 
+\begin{wordonframe}{Moto del pianeta/stella attorno al CM}
 Anomalia vera, $\nu(t), f(t)$: \'e l'angolo tra la direzione del pericentro e la posizione al tempo t misurata dal baricentro. L'anomalia eccentrica \'e l'angolo corrispondente all'anomalia vera riferito al cerchio ausiliario
 \begin{align*}
 &\cos{\nu(t)}=\frac{\cos{E(t)}-e}{1-e\cos{E(t)}}\\
@@ -98,3 +96,4 @@ L'anomalia medi \'e un'angolo relativo al moto medio attorno all'orbita: in un'o
 &M(t)=\frac{2\pi}{P}(t-t_p)=n(t-t_p)\\
 &M(t)=E(t)-e\sin{E(t)}
 \end{align*}
+\end{wordonframe}

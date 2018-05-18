@@ -2,8 +2,6 @@
 
 \hypersetup{pdfpagemode=FullScreen}
 
-\setbeamertemplate{caption}{\insertcaption}
-
 %% colors
 \definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
 \definecolor{brilliantlavender}{rgb}{0.96, 0.73, 1.0}
@@ -30,14 +28,11 @@
 \usepackage{functions}
 %http://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include
 \newcommand{\setmuskip}[2]{#1=#2\relax} %%problem usinig mu with calc (req by mathtools) loaded
-
+\usepackage{beamersetup}
 \usepackage{sources}
-
-
 %\usepackage{length}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Funzioni per questo file main
 \usepackage{mathOp}
-
 \def\status{coazione}%ripeter
 \def\keeptrying{coazione}
 \usepackage{LocalF}
@@ -93,25 +88,19 @@
 %\frame{\tableofcontents[onlyparts]}
 
 \begin{frame}[label={argomenti}]{Sistemi planetari: Sistema solare}
-
 \tableofcontents[onlyparts]
-
-
 \end{frame}
 
 \begin{wordonframe}{Perch\'e studio queste cose?? Sviluppi; futuro.}
 tecniche osservative e bias dei survey - 
 
+Osservazione sistemi planetari: luce emessa da stella/pianeta. Dischi protoplanetarii.
 \end{wordonframe}
 
-\part{Osservabili sistemi planetari}\label{part:observables}
-\frame{\partpage}
-
+\part{Moti sistemi planetarii, struttura interna pianeti (emissione termica e non). Dischi di accrescimento.}\label{part:observables}
 \input{observables}
 
 \part{tecniche osservative}\label{part:tech}
-\frame{\partpage}
-
 \input{obstech}
 
 
