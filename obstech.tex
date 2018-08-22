@@ -210,8 +210,8 @@ Noise level: instrumental+stellar noise, number of measure: $s\propto N\expy{-1/
 
 \begin{frame}{Observables of transit light curves}
 \begin{columns}[c]\begin{column}{0.4\textwidth}
-\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.42\textheight]{Tflux}\label{fig:Tflux}\end{figure}
-\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.42\textheight]{Tflux-b-lambda}\label{fig:Tflux-b-lambda}\end{figure}
+\begin{figure}[!ht]\includegraphics[trim={0cm 1cm 0 0},clip, keepaspectratio,height=0.41\textheight]{Tflux}\label{fig:Tflux}\end{figure}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.41\textheight]{Tflux-b-lambda}\label{fig:Tflux-b-lambda}\end{figure}
 \end{column}
 \begin{column}{0.6\textwidth}
 \begin{itemize}
@@ -231,22 +231,40 @@ Noise level: instrumental+stellar noise, number of measure: $s\propto N\expy{-1/
 \begin{frame}{Transit probability}
 \begin{columns}  \begin{column}{0.3\textwidth}
 \begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.99\textwidth]{Tprob}\label{fig:Tprob}\end{figure}
-\end{column} \begin{column}{\textwidth}\end{column}  \end{columns}
+\end{column}
+\begin{column}{0.7\textwidth}
 La probabilit\'a che per un pianeta orientato arbitrariamente si possa osservare transito
 \begin{equation*}
 p=\frac{R_*}{a}\approx0.005\frac{R_*}{\rsun{}}(\frac{a}{\si{\astronomicalunit}})\expy{-1}
 \end{equation*}
 data dall'area spazzata dall'ombra del pianeta sulla sfera celeste.
+\end{column}  \end{columns}
 \end{frame}
 
 \begin{frame}{Physical quantities}
 \begin{columns}[T]
 \begin{column}{0.5\textwidth}
-
+\begin{align*}
+&\frac{R_p}{R_*}=\sqrt{\Delta F}\\
+&b=\frac{a}{R_*}\cos{i}\\
+&=\sqrt{\frac{(1-\sqrt{\Delta F})^2-\frac{\sin^2{t_F\pi/P}}{\sin^2{t_T\pi/P}}(1+\sqrt{\Delta F})^2}{1-[\sin^2{t_F\pi/P}/\sin^2{t_T\pi/P}]}}\\
+&\frac{a}{R_*}=\sqrt{\frac{(1+\sqrt{\Delta F})^2-b^2[1-\sin^2{t_T\pi/P}]}{\sin^2{t_T\pi/P}}}\\
+&P^2=\frac{4\pi^2 a^3}{G(M_*+M_p)}\\
+&R_*=kM_*^x\\
+&\rho_*=\frac{M_*}{R_*^3}
+\end{align*}
 \end{column}
 \begin{column}{0.5\textwidth}
-
+\begin{align*}
+&\frac{M_*}{\msun{}}=(k^3\frac{\rho_*}{\rho_{\odot}})\expy{\frac{1}{1-3x}}\\
+&\frac{R_*}{\rsun{}}=k(\frac{M_*}{\msun{}})^x=(k\expy{1/x}\frac{\rho_*}{\rho_{\odot}})\expy{\frac{x}{1-3x}}\\
+&a=(\frac{P^2GM_*}{4\pi^2})\expy{\frac{1}{3}}\\
+&i=acos{b\frac{R_*}{a}}\\
+&\frac{R_p}{\rsun{}}=\frac{R_*}{\rsun{}}\sqrt{\Delta F}=(k\expy{1/x}\frac{\rho_*}{\rho_{\odot}})\expy{\frac{x}{1-3x}}\sqrt{\Delta F}
+\end{align*}
+Main sequence: k=1, $x\approx0.8$.
 \end{column}\end{columns}
+If $M_*$, $R_*$ from spectral type: $P=\frac{G\pi}{32}\frac{M_*}{R_*^3}\frac{(t_T^2-t_F^2)\expy{3/2}}{\Delta F\expy{3/4}}$
 \end{frame}
 
 \begin{wordonframe}{Fatti}
