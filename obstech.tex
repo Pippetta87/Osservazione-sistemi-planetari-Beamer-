@@ -107,11 +107,23 @@ Inserendo quantit\'a tipiche per ricerca di esopianeti
 \begin{figure}[!ht]\includegraphics[trim={0cm 2cm 0 0},clip, keepaspectratio,height=0.5\textheight]{sightvelocity}\label{fig:sightvelocity}\end{figure}
 \begin{align*}
 &v_r=K[\cos{\omega+\nu}+e\cos{\omega}]\\
-&K=\frac{2\pi}{T}\frac{A_*\sin{i}}{\sqrt{1-e^2}}\\
+&K=\frac{2\pi}{P}\frac{a_*\sin{i}}{\sqrt{1-e^2}}\\
 &K=\frac{2\pi}{P}\frac{a_*\sin{i}}{(1-e^2)\expy{1/2}}=(\frac{2\pi G}{P})\expy{1/3}\frac{M_p\sin{i}}{(M_p+M_*)\expy{2/3}}\frac{1}{(1-e^2)\expy{1/2}}
 \end{align*}
-
 \end{frame}
+
+\begin{wordonframe}{Orbit specification}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.99\textwidth]{ellipse}\label{fig:ellipse}\end{figure}
+\end{column}\begin{column}{0.5\textwidth}
+Ellipse: rel to focus $r=\frac{a(1-e^2)}{1+e\cos{\nu}}$, rel to center $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$.
+\begin{align*}
+&q=a(1-e)\\
+&Q=a(1+e)\\
+&p=a(1-e^2)
+\end{align*}
+\end{column}\end{columns}
+\end{wordonframe}
 
 \begin{wordonframe}{Variazione periodica velocit\'a radiale stella}
 Variazione periodica della velocit\'a radiale dovuta al moto attorno al CM.
