@@ -147,15 +147,7 @@ $i$ \'e l'inclinazione dell'orbita rispetto al piano nella sfera celeste normale
 \end{wordonframe}
 
 \begin{frame}{Mass function}
-\begin{block}{Sistema spettroscopico e fotometrico}
-Se entrambi gli spettri fossero osservabili dalle velocit\'a radiali ottengo $a^*\sin{i}, a_P\sin{i}$ e $(M^*+m_P)\sin^3{i}$ essendo $\frac{a^*\sin{i}}{a_P\sin{i}}=\frac{m_P}{m^*}$: ottengo $M^*\sin{i}$ e $m_P\sin{i}$.
-Nel caso usuale in cui sia osservabile solo lo spettro della stella:
-\begin{align*}
-&a=a^*+a_P=a^*(1+\frac{a_P}{a^*})=a^*(1+\frac{M^*}{m_P})\\
-&a^3\sin^3{i}=a^*\sin^3{i}(\frac{m_P+M^*}{m_P})^3
-\end{align*}
-\end{block}
-\begin{block}{Mass function}
+
 Definisco la funzione delle masse
 \begin{align*}
 &f(M^*,m_P)=(M^*+m_P)\sin^3{i}\frac{m_P^3}{(M^*+m_P)^3}\\
@@ -163,33 +155,31 @@ Definisco la funzione delle masse
 &f=\frac{PK_2^3}{2\pi G}&\intertext{$K_2$ is half the change in radial velocity.}\\
 &f=\frac{M_1\sin^3{i}}{(1+q)^2}&\intertext{q \'e il rapporto tra le masse $M^*$ fratto massa oggetto non visibile $m_P$.}
 \end{align*}
-\end{block}
 \end{frame}
 
-\begin{wordonframe}{Osservazione velocit\'a radiale}
-Se il sistema \'e anche fotometrico \'e possibile valutare l'inclinazione; ponendo $i=\frac{\pi}{2}$ ho un limite inferiore per le masse.
-Ampiezza variazione velocit\'a radiale massa stella host
-\begin{equation*}
-v=\frac{30m_P\sin{i}}{{M^*}\expy{\frac{2}{3}}P\expy{\frac{1}{3}}},\ \si{\kilo\meter\per\second}
-\end{equation*}
-dove la massa \'e espressa in $\msun{}$ e il periodo in anni: posso ricavare $m_P\sin{i}$.
-Per il sistema Sole/Giove $v\approx\SI{12}{\meter\per\second}$.
-Sole/Terra $v\approx\SI{10}{\cm\per\second}$.
+\begin{wordonframe}{Radial velocity semi-amplitude}
 Prendendo la coordinata z della stella lungo la linea di vista
 \begin{align*}
 &z=r(t)\sin{i}\sin{(\omega+\nu)}\\
 &v_r=\dot{z}=K[\cos{(\omega+\nu)}+e\cos{\omega}]\\
 &K=\frac{2\pi}{P}\frac{a_*\sin{i}}{(1-e^2)\expy{\frac{1}{2}}}
 \end{align*}
+Per il sistema Sole/Giove $K_k\approx\SI{12}{\meter\per\second}$ ($a=\SI{5.2}{\astronomicalunit}$, $P=\SI{11.9}{\year}$).
+Sole/Terra $K_E\approx\SI{10}{\cm\per\second}$.
 \end{wordonframe}
 
-\begin{wordonframe}{Variazione velocit\'a radiale}
-\begin{figure}[!ht]
-\centering
-%\includegraphics[width=(0.9\textwidth),height=\textheight,keepaspectratio]{vrcurve}
-\caption{Stellar radial velocity curves: dependency on $e$ and $\omega$.}
-\end{figure}
-\end{wordonframe}
+\begin{frame}{Keplerian observables}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,width=0.9\textwidth]{orbitalphase.jpeg}\label{fig:orbitalphase}\end{figure}
+\begin{columns}[T]\begin{column}{0.5\textwidth}
+Descrizione orbita: $(a,e,P,t_p,i,\Omega,\omega)$.
+\end{column} \begin{column}{0.5\textwidth}
+\begin{align*}
+&v_r=K[\cos{(\omega+\nu(t))}+e\cos{\omega}]+\gamma+d(t-t_o)
+\end{align*}
+con $K(a,e,m\sin{i},P)$: ottengo e, P, $t_p$, $\omega$, $m\sin{i}$.
+\end{column}  \end{columns}
+
+\end{frame}
 
 \section{Tecniche fotometriche: transiti.}
 
