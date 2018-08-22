@@ -210,15 +210,22 @@ Noise level: instrumental+stellar noise, number of measure: $s\propto N\expy{-1/
 
 \begin{frame}{Observables of transit light curves}
 \begin{columns}[c]\begin{column}{0.4\textwidth}
-\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.45\textheight]{Tflux}\label{fig:Tflux}\end{figure}
-\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.45\textheight]{Tflux-b-lambda}\label{fig:Tflux-b-lambda}\end{figure}
-\end{column} \begin{column}{0.6\textwidth}\end{column}  \end{columns}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.42\textheight]{Tflux}\label{fig:Tflux}\end{figure}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.42\textheight]{Tflux-b-lambda}\label{fig:Tflux-b-lambda}\end{figure}
+\end{column}
+\begin{column}{0.6\textwidth}
 \begin{itemize}
     \item Il periodo P.
-    \item La profondit\'a del transito $\Delta F$.
+    \item La profondit\'a del transito $\Delta F=(\frac{R_p}{R_*})^2$.
     \item Intervallo di tempo tra 1-4 $t_T$.
+    \begin{align*}
+    &t_T=13(\frac{M_*}{\msun{}})\expy{-\frac{1}{2}}(\frac{a}{\si{\astronomicalunit}})\expy{\frac{1}{2}}(\frac{R_*}{\rsun{}})\si{\hour}\\
+    &\frac{t_T}{P}\approx\frac{R_*}{\pi a\sqrt{1-e^2}}[(1+\frac{R_p}{R_*})^2-b^2]^{\frac{1}{2}}\frac{r_t}{a}\\
+    &r_t=a(1-e\cos{E_t})\ (R_p\ll R_*\ll a)
+    \end{align*}
     \item Intervallo di tempo tra 2-3 $t_F$.
 \end{itemize}
+\end{column}\end{columns}
 \end{frame}
 
 \begin{frame}{Transiti}
