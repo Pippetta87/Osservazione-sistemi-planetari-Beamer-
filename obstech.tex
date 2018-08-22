@@ -206,14 +206,21 @@ Noise level: instrumental+stellar noise, number of measure: $s\propto N\expy{-1/
 
 \section{Tecniche fotometriche: transiti.}
 
-\begin{frame}{Transiti}
-Abbiamo 4 osservabili
+\begin{frame}{Observables of transit light curves}
+\begin{columns}[c]\begin{column}{0.5\textwidth}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.45\textheight]{Tflux}\label{fig:Tflux}\end{figure}
+\begin{figure}[!ht]\includegraphics[trim={0cm 0cm 0 0},clip, keepaspectratio,height=0.45\textheight]{Tflux-b-lambda}\label{fig:Tflux-b-lambda}\end{figure}
+\end{column} \begin{column}{0.5\textwidth}\end{column}  \end{columns}
 \begin{itemize}
     \item Il periodo P.
     \item La profondit\'a del transito $\Delta F$.
     \item Intervallo di tempo tra 1-4 $t_T$.
     \item Intervallo di tempo tra 2-3 $t_F$.
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Transiti}
+
 \begin{align*}
 &\Delta F\approx(\frac{R_p}{R_*})^2\\
 &t_T\approx13(\frac{M_*}{\msun{}})\expy{-\frac{1}{2}}(\frac{a}{\si{\astronomicalunit}})\expy{\frac{1}{2}}\frac{R_*}{\rsun{}}\si{\hour}
