@@ -37,6 +37,13 @@ se riflette una percentuale $A_{\lambda}$ (albedo). quindi per un pianeta all'op
 \end{align*}
 \end{wordonframe}
 
+\section{Pianeti}
+
+\begin{wordonframe}{Refs: shape of the planet}
+Hubbard smoluckowski: ''Structure of Jupiter and saturn''  2.4 shape of the planet
+\end{wordonframe}
+
+
 \section{Dischi di accrescimento}
 
 \begin{wordonframe}{Ref protoplanetary disks}
@@ -45,8 +52,8 @@ Revs: Williams Cieza 11; Testi 14; Andrews 15
 
 \end{wordonframe}
 
-\begin{frame}{THermal emission from optically thin disk}
-Dust: tracer, continuum emission. $\lambda\approx\si{\milli\meter}(\nu\approx\SI{300}{\giga\hertz})$ emissioni s optically thin for surface density $\Sigma_d<1/\kappa_{\nu}\approx\SI{3}{\gram\per\square\cm}$: $M_d=\frac{F_{\nu}d^2}{\kappa_{\nu}B_{\nu}(T_d)}$, assumption: single temperature greybody $F_{\nu}=B_{\nu}(T_d)(1-\exp{-\tau_{\nu}})$, opacity $\kappa_{\nu}=\kappa_0(\frac{\nu}{\nu_0})\expy{\beta}$, $\kappa_0=\SI{10}{\square\cm\per\gram}$, $\nu_0=\SI{1000}{\giga\hertz}$, $\beta=1$
+\begin{frame}{THermal emission from optically thin disk. Misura massa di polvere.}
+Dust: tracer, continuum emission. $\lambda\approx\si{\milli\meter}(\nu\approx\SI{300}{\giga\hertz})$ emissioni optically thin for surface density $\Sigma_d<1/\kappa_{\nu}\approx\SI{3}{\gram\per\square\cm}$: $M_d=\frac{F_{\nu}d^2}{\kappa_{\nu}B_{\nu}(T_d)}$, assumption: single temperature greybody $F_{\nu}=B_{\nu}(T_d)(1-\exp{-\tau_{\nu}})$, opacity $\kappa_{\nu}=\kappa_0(\frac{\nu}{\nu_0})\expy{\beta}$, $\kappa_0=\SI{10}{\square\cm\per\gram}$, $\nu_0=\SI{1000}{\giga\hertz}$, $\beta=1$, $\tau_{\nu}=\Sigma\kappa_{\nu}$
 \begin{align*}
 &T_{dust}=278.3\frac{L_*^{0.25}}{r^{0.5}}\\
 &\lambda_{peak}=\frac{\SI{2898}{\micro\meter}}{T}=10.4 \frac{r\expy{0.5}}{L_*\expy{0.25}}\\
@@ -58,7 +65,11 @@ Efficient emission at short $\lambda<D$: $Q_{em}=1$.
 In-efficient emission $\lambda>D$: $Q_{em}=(\frac{D}{\lambda})^n$
 \end{frame}
 
-
+\begin{frame}{Misura massa di gas}
+Line intensity for optically thin emission $I_{\nu}=\frac{f_uN_{tot}A_{ul}h\nu}{4\pi d^2?}$, fractional population $f_u\xrightarrow{LTE}g_u\Exp{-\Delta E/kT}/Q(T)$ $g_u$ degeneracy and $Q(T)$ partition function, $N_{tot}$ total column density, $A_{ul}$ spontaneous emission coefficient.
+Problems with $H_2$ emission: field66, carmona08, pascucci06
+$\frac{I_{CO, 1-0}}{I_{H_2 2-0}}=\frac{f_{CO,J=1}(T)N_{CO}A_{CO,1-0}\nu_{CO,1-0}}{f_{H_2,J=2}(T)N_{H_2}A_{H_2,2-0}\nu_{H_2,2-0}}$, calibration of tracer: $\nu_{CO,1\to0}=\SI{115.27}{\giga\hertz}$, $T=\SI{20}{\kelvin}$, $N_{CO}/N_{H_2}\approx\num{e-4}$
+\end{frame}
 
 \section{Path of star in the sky}\linkdest{motion}
 
